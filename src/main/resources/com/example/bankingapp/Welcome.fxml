@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/22" fx:controller="com.example.bankingapp.WelcomeController">
+    <center>
+        <VBox alignment="center" prefHeight="486.0" prefWidth="454.0" spacing="20">
+            <Label prefHeight="10.0" prefWidth="142.0" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Easy Savings" textFill="#0de02d" />
+            <Button onAction="#openMainPage" text="Login" />
+        </VBox>
+    </center>
+</BorderPane>

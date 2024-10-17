@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/22" fx:controller="com.example.bankingapp.HelloController">
+    <center>
+        <Label style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-alignment: center;" text="Easy Savings" />
+        <TableView fx:id="accountTable" prefHeight="400.0" prefWidth="389.0">
+            <columns>
+                <TableColumn fx:id="accountHolderCol" text="Account" />
+                <TableColumn fx:id="balanceCol" text="Balance" />
+            </columns>
+        </TableView>
+    </center>
+   <bottom>
+        <HBox alignment="center" spacing="10" BorderPane.alignment="CENTER">
+
+            <Button onAction="#showBalanceWindow" text="View Balance" />
+            <Button onAction="#depositMoney" text="Deposit" />
+            <Button onAction="#withdrawMoney" text="Withdraw" />
+        </HBox>
+   </bottom>
+</BorderPane>

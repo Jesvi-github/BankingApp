@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.bankingapp.BalanceChartController">
+    <center>
+        <BarChart fx:id="accountChart" title="Account Balances">
+            <xAxis>
+                <CategoryAxis fx:id="xAxis" label="Account Holder"/>
+            </xAxis>
+            <yAxis>
+                <NumberAxis fx:id="yAxis" label="Balance"/>
+            </yAxis>
+        </BarChart>
+    </center>
+</BorderPane>
