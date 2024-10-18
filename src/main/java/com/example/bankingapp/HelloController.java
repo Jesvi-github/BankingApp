@@ -66,7 +66,7 @@ public class HelloController {
             double amount = getAmountFromUser("Deposit");
             if (amount > 0) {
                 selectedAccount.deposit(amount);
-                dbUtility.updateBalance(selectedAccount.getAccountHolder(), selectedAccount.getBalance()); // Update in DB
+                dbUtility.updateBalance(selectedAccount.getAccountHolder(), selectedAccount.getBalance());
                 accountTable.refresh();
             }
         } else {

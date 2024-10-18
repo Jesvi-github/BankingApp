@@ -9,9 +9,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DBUtility {
-    private String url = "jdbc:mysql://127.0.0.1:3306/login_schema"; // Update with your DB URL
-    private String user = "root"; // Your DB username
-    private String password = "123"; // Your DB password
+    private String url = "jdbc:mysql://127.0.0.1:3306/login_schema"; //
+    private String user = "root"; //
+    private String password = "123"; //
 
     public Connection connect() throws SQLException {
         return DriverManager.getConnection(url, user, password);
@@ -19,7 +19,7 @@ public class DBUtility {
 
     public List<Account> getAccounts() {
         List<Account> accounts = new ArrayList<>();
-        String query = "SELECT account_holder, balance FROM accounts"; // Update with your actual table name
+        String query = "SELECT account_holder, balance FROM accounts"; //
 
         try (Connection connection = connect();
              PreparedStatement stmt = connection.prepareStatement(query);
@@ -47,7 +47,7 @@ public class DBUtility {
             stmt.setString(2, accountHolder);
             stmt.executeUpdate();
         } catch (SQLException e) {
-            e.printStackTrace(); // Handle exceptions properly
+            e.printStackTrace();
         }
     }
 }

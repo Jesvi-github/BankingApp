@@ -14,14 +14,14 @@ public class WelcomeController {
     @FXML
     private void openMainPage(javafx.event.ActionEvent event) {
         try {
-            Parent mainPage = FXMLLoader.load(getClass().getResource("main.fxml")); // Adjust this if necessary
+            Parent mainPage = FXMLLoader.load(getClass().getResource("main.fxml"));
             Scene mainScene = new Scene(mainPage);
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setScene(mainScene);
             stage.setTitle("Banking Application");
             stage.show();
         } catch (IOException e) {
-            e.printStackTrace(); // Add error handling as needed
+            e.printStackTrace();
         }
     }
 }
