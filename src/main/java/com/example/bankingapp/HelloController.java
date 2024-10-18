@@ -39,7 +39,7 @@ public class HelloController {
     }
 
     private void populateTable() {
-        // Here you would retrieve your data from the DB
+
         accountTable.getItems().addAll(
                 new Account("Chequing", 2000),
                 new Account("Savings", 1500)
